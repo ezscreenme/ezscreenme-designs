@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container">
+    <h1>Congratulations! You are free to continue to the event!</h1>
+    <div class="row">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <img src="{{ url_for('static', filename='qrcode.png') }}" alt="verified">
+            <h4>Your access code: <i>rn2o3rn2o3</i></h4>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

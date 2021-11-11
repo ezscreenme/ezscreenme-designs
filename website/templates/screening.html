@@ -1,0 +1,47 @@
+{% extends 'layout.html' %}
+{% block content %}
+    <div class="container lighter">
+        <form method='POST' action="">
+            <input id="csrf_token" name="csrf_token" type="hidden" value="ImY2ZTE0YTQxMjM2Mzg4ZGZkZjQ4YTQyOTA2MjhhYTYxMGRlZjZhNDEi.YY17tw.nqlxQi3pOwvu3hWsWFfTrQK6HoI">
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4">Complete Screening</legend>
+                <div class="form-group mb-3">
+                    <label class="form-control-label" for="username">Full Name</label>                    
+                    <input class="form-control form-control" id="username" name="username" required type="text" value="">
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-control-label" for="password">Email</label>
+                    <input class="form-control form-control" id="password" name="password" required type="password" value="">                    
+                </div>
+
+                <div class="form-group mb-3">
+                    <label class="form-control-label" for="password">Phone Number</label>
+                    <input class="form-control form-control" id="password" name="password" required type="password" value="">                    
+                </div>
+
+            </fieldset>
+            <div class="form-check">
+                <input class="form-check-input" id="rememberMe" name="rememberMe" type="checkbox" value="y">
+                <label class="form-check-label" for="rememberMe">Are you currently subject to a quarantine order or have you been advised to isolate, due to travel, symptoms or potential exposure to COVID-19?</label>
+            </div><br>
+            <div class="form-check">
+                <input class="form-check-input" id="rememberMe" name="rememberMe" type="checkbox" value="y">
+                <label class="form-check-label" for="rememberMe">Has someone you are in close contact with tested positive for COVID-19
+                    in the last 14 days?</label>
+            </div><br>
+            <div class="form-check">
+                <input class="form-check-input" id="rememberMe" name="rememberMe" type="checkbox" value="y">
+                <label class="form-check-label" for="rememberMe">Are you experiencing any of the following symptoms:
+                    Fever, Chills, New or worsening cough (dry or productive), Barking cough (croup), Shortness of breath/difficulty breathing, Sore throat, Difficulty swallowing, Loss of taste or smell, Pink eye (conjunctivitis)</label>
+            </div><br>
+            <div class="form-check">
+                <input class="form-check-input" id="rememberMe" name="rememberMe" type="checkbox" value="y">
+                <label class="form-check-label" for="rememberMe">Does anyone in your household have one or more of the above symptoms and/or are waiting for test results after experiencing symptoms?</label>
+            </div><br>
+            <div class="form-group">
+                <input class="btn btn-outline-primary" id="submit" name="submit" type="submit" value="Sign In">
+            </div>
+        </form>
+    </div>
+{% endblock %}
