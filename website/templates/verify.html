@@ -1,0 +1,43 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!-- <div class="alert alert-success">
+    Successfully verified! Attendee may proceed
+</div> -->
+<!-- <div class="alert alert-danger">
+    Error verifying! Attendee may NOT proceed
+</div> -->
+
+
+<div class="container">
+    <style>
+        p{ font-size: 1.6rem; }
+    </style>
+    <h1 class="center">Verify Attendees</h1><br><br>
+    <div class="row">
+        <div class="col-md-6 align-content-center">
+            <h2 class="center">Camera Input</h2>
+            <p class="center">
+                <img src="{{ url_for('static', filename='camera.jpg') }}" alt="" style="width: 100%; border: 3px solid black;">
+            </p>
+        </div>
+        <div class="col-md-6">
+            <h2 class="center">Manually verify</h2>
+            <p class="center">
+                <div class="form-group mb-3">
+                    <p class="center">
+                        <label class="form-control-label center" for="username">Input Code</label>                    
+                    </p>
+                    <input class="form-control form-control-lg" id="username" name="username" required type="text" value="">
+                </div>
+                <div class="form-group">
+                    <p class="center">
+                        <input class="btn btn-outline-primary" id="submit" name="submit" type="submit" value="Submit">
+                    </p>
+                </div>
+    
+            </p>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

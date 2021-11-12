@@ -23,6 +23,18 @@ def approved():
 def denied():
     return render_template('denied.html')
 
+@app.route('/verify', methods=['GET', 'POST'])
+def verify():
+    return render_template('verify.html')
+
+@app.route('/organizer', methods=['GET', 'POST'])
+def organizer():
+    return render_template('organizer.html')
+
+@app.route('/attendees', methods=['GET', 'POST'])
+def attendees():
+    return render_template('attendees.html')
+
 @app.route('/register', methods=['GET', 'POST'])
 def register():
     # we redirect the user if they're already authenticated

@@ -1,0 +1,12 @@
+{% extends 'layout.html' %}
+{% block content %}
+<div class="container">
+    <style>
+        p{ font-size: 1.6rem; }
+    </style>
+    <h1>Welcome {{ current_user.username }}!</h1><br><br>
+    <p>This is your organizer panel.</p>
+    <p>Feel free to <a href="{{ url_for('verify') }}">verify attendees</a> or <a href="{{ url_for('attendees') }}">view your attendees!</a></p>
+</div>
+
+{% endblock %}
